@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuroko Tetsuya — UI/UX Designer & Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo smooth-scroll">&lt;Tetsu /&gt;</a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link smooth-scroll" data-i18n="nav_home">Beranda</a></li>
+          <li><a href="#about" class="nav-link smooth-scroll" data-i18n="nav_about">Tentang</a></li>
+          <li><a href="#skills" class="nav-link smooth-scroll" data-i18n="nav_skills">Keahlian</a></li>
+          <li><a href="#portfolio" class="nav-link smooth-scroll" data-i18n="nav_portfolio">Portofolio</a></li>
+          <li><a href="#testimonials" class="nav-link smooth-scroll" data-i18n="nav_testimonials">Testimoni</a></li>
+          <li><a href="#contact" class="nav-link smooth-scroll" data-i18n="nav_contact">Kontak</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">
+            <span class="lang-option" id="lang-id">ID</span>
+            <span class="lang-separator">|</span>
+            <span class="lang-option" id="lang-en">EN</span>
+          </button>
+          <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="#home" class="mobile-link smooth-scroll" data-i18n="nav_home">Beranda</a></li>
+          <li><a href="#about" class="mobile-link smooth-scroll" data-i18n="nav_about">Tentang</a></li>
+          <li><a href="#skills" class="mobile-link smooth-scroll" data-i18n="nav_skills">Keahlian</a></li>
+          <li><a href="#portfolio" class="mobile-link smooth-scroll" data-i18n="nav_portfolio">Portofolio</a></li>
+          <li><a href="#testimonials" class="mobile-link smooth-scroll" data-i18n="nav_testimonials">Testimoni</a></li>
+          <li><a href="#contact" class="mobile-link smooth-scroll" data-i18n="nav_contact">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-gradient"></div>
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge reveal-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span data-i18n="hero_badge">Tersedia untuk proyek baru</span>
+        </div>
+        <h1 class="hero-name reveal-item">Kuroko Tetsuya</h1>
+        <div class="hero-typewriter reveal-item">
+          <span data-i18n="hero_iam">Saya seorang</span>
+          <span class="typewriter-text" id="typewriter"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+        <p class="hero-tagline reveal-item" data-i18n="hero_tagline">
+          Membangun pengalaman digital yang indah dan fungsional untuk startup dan perusahaan di seluruh Asia Tenggara
+        </p>
+        <div class="hero-ctas reveal-item">
+          <a href="#portfolio" class="btn-primary smooth-scroll" data-i18n="hero_cta1">Lihat Portofolio</a>
+          <a href="#" class="btn-secondary" data-i18n="hero_cta2">
+            <i class="fa-solid fa-download"></i>
+            Unduh CV
+          </a>
+        </div>
+        <div class="hero-scroll-indicator reveal-item">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section section-reveal">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-col">
+            <div class="about-img-wrapper">
+              <img src="https://picsum.photos/seed/rafi/500/500" alt="Kuroko Tetsuya" class="about-img" />
+              <div class="about-img-badge">
+                <i class="fa-solid fa-star"></i>
+                <span>Top Rated</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-text-col">
+            <p class="section-label" data-i18n="about_label">Tentang Saya</p>
+            <h2 class="section-title" data-i18n="about_title">Desainer yang bercerita lewat piksel</h2>
+            <p class="about-bio" data-i18n="about_bio">
+              Halo! Saya Tetsu, seorang UI/UX Designer dan Frontend Developer dengan pengalaman 5 tahun membangun produk digital untuk startup dan perusahaan besar di Asia Tenggara. Saya percaya bahwa desain yang baik bukan hanya soal estetika, tapi juga tentang memecahkan masalah nyata bagi pengguna nyata.
+            </p>
+            <p class="about-bio" data-i18n="about_bio2">
+              Dari Jakarta, saya telah berkolaborasi dengan tim lintas budaya untuk menghadirkan produk yang berdampak, mulai dari aplikasi fintech hingga platform e-commerce skala besar.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label" data-i18n="stat_projects">Proyek Selesai</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">30+</span>
+                <span class="stat-label" data-i18n="stat_clients">Klien Puas</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5</span>
+                <span class="stat-label" data-i18n="stat_years">Tahun Pengalaman</span>
+              </div>
+            </div>
+            <div class="about-socials">
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="social-icon" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="skills_label">Keahlian</p>
+          <h2 class="section-title" data-i18n="skills_title">Alat dan teknologi yang saya kuasai</h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle">Saya terus memperbarui keahlian saya untuk mengikuti perkembangan industri</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+            <span class="skill-name">Figma</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-adobe"></i></div>
+            <span class="skill-name">Adobe XD</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-solid fa-wind"></i></div>
+            <span class="skill-name">Tailwind CSS</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <span class="skill-name">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section id="portfolio" class="portfolio-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="portfolio_label">Portofolio</p>
+          <h2 class="section-title" data-i18n="portfolio_title">Proyek pilihan terbaik saya</h2>
+          <p class="section-subtitle" data-i18n="portfolio_subtitle">Setiap proyek adalah cerita tentang tantangan, kreativitas, dan solusi</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="https://picsum.photos/seed/proj1/600/400" alt="NexaPay App" />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag" data-i18n="tag_fintech">Fintech</span>
+              <h3 data-i18n="proj1_title">NexaPay Mobile App</h3>
+              <p data-i18n="proj1_desc">Desain ulang aplikasi pembayaran digital yang meningkatkan konversi sebesar 34% dalam tiga bulan pertama peluncuran.</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="https://picsum.photos/seed/proj2/600/400" alt="Belanja.io Dashboard" />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag" data-i18n="tag_ecommerce">E-Commerce</span>
+              <h3 data-i18n="proj2_title">Belanja.io Dashboard</h3>
+              <p data-i18n="proj2_desc">Dashboard analitik untuk platform e-commerce dengan visualisasi data real-time dan sistem manajemen produk yang intuitif.</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="https://picsum.photos/seed/proj3/600/400" alt="SehatKu Health Platform" />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag" data-i18n="tag_health">Kesehatan</span>
+              <h3 data-i18n="proj3_title">SehatKu Platform</h3>
+              <p data-i18n="proj3_desc">Platform telemedicine yang menghubungkan pasien dengan dokter spesialis, dirancang dengan fokus pada aksesibilitas dan kemudahan penggunaan.</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="https://picsum.photos/seed/proj4/600/400" alt="EduPath LMS" />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag" data-i18n="tag_edtech">EdTech</span>
+              <h3 data-i18n="proj4_title">EduPath LMS</h3>
+              <p data-i18n="proj4_desc">Sistem manajemen pembelajaran online untuk universitas dengan 50.000 mahasiswa aktif, menampilkan gamifikasi dan modul interaktif.</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="https://picsum.photos/seed/proj5/600/400" alt="GreenLog Logistics" />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag" data-i18n="tag_logistics">Logistik</span>
+              <h3 data-i18n="proj5_title">GreenLog Tracker</h3>
+              <p data-i18n="proj5_desc">Aplikasi pelacakan pengiriman berbasis peta untuk perusahaan logistik ramah lingkungan dengan 500 armada kendaraan aktif.</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-img-wrap">
+              <img src="https://picsum.photos/seed/proj6/600/400" alt="Ruang Rasa App" />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag" data-i18n="tag_food">Food & Beverage</span>
+              <h3 data-i18n="proj6_title">Ruang Rasa App</h3>
+              <p data-i18n="proj6_desc">Aplikasi pemesanan makanan untuk jaringan restoran premium dengan fitur reservasi meja, menu digital, dan program loyalitas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="testimonials-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="testi_label">Testimoni</p>
+          <h2 class="section-title" data-i18n="testi_title">Kata mereka tentang saya</h2>
+          <p class="section-subtitle" data-i18n="testi_subtitle">Kepercayaan klien adalah aset terbesar saya</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote" data-i18n="testi1_quote">"Tetsu benar-benar memahami apa yang pengguna butuhkan. Desainnya tidak hanya indah secara visual, tapi juga sangat intuitif. Konversi kami naik signifikan setelah redesign yang dia kerjakan."</p>
+            <div class="testi-author">
+              <img src="https://picsum.photos/seed/client1/80/80" alt="Dian Permata" class="testi-avatar" />
+              <div class="testi-author-info">
+                <strong>Dian Permata</strong>
+                <span data-i18n="testi1_role">Head of Product, NexaPay</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote" data-i18n="testi2_quote">"Bekerja dengan Tetsu adalah pengalaman yang sangat menyenangkan. Ia responsif, profesional, dan selalu memberikan lebih dari yang dijanjikan. Dashboard yang ia buat mendapat pujian dari seluruh tim kami."</p>
+            <div class="testi-author">
+              <img src="https://picsum.photos/seed/client2/80/80" alt="Bagas Wicaksono" class="testi-avatar" />
+              <div class="testi-author-info">
+                <strong>Bagas Wicaksono</strong>
+                <span data-i18n="testi2_role">CTO, Belanja.io</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="testi-quote" data-i18n="testi3_quote">"Tetsu punya kemampuan unik untuk menerjemahkan visi bisnis menjadi desain yang berbicara kepada pengguna. Platform SehatKu mendapat rating 4.8 di App Store, dan itu berkat UX yang ia rancang dengan sangat cermat."</p>
+            <div class="testi-author">
+              <img src="https://picsum.photos/seed/client3/80/80" alt="dr. Mirna Kusuma" class="testi-avatar" />
+              <div class="testi-author-info">
+                <strong>dr. Mirna Kusuma</strong>
+                <span data-i18n="testi3_role">CEO, SehatKu Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="contact_label">Kontak</p>
+          <h2 class="section-title" data-i18n="contact_title">Mari berkolaborasi</h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">Punya proyek menarik? Saya siap mendengar cerita Anda</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong data-i18n="contact_email_label">Email</strong>
+                <span>kuroko.tetsuya@email.com</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong data-i18n="contact_phone_label">Telepon</strong>
+                <span>+62 812 3456 7890</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong data-i18n="contact_location_label">Lokasi</strong>
+                <span>Jakarta, Indonesia</span>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="social-icon" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="contact-form-col">
+            <form id="contact-form" action="" method="POST">
+              <div class="form-group">
+                <label for="name" data-i18n="form_name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" data-i18n-placeholder="form_name_ph" placeholder="Nama Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="form_email">Email</label>
+                <input type="email" id="email" name="email" data-i18n-placeholder="form_email_ph" placeholder="email@anda.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject" data-i18n="form_subject">Subjek</label>
+                <input type="text" id="subject" name="subject" data-i18n-placeholder="form_subject_ph" placeholder="Perihal pesan Anda" required />
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="form_message">Pesan</label>
+                <textarea id="message" name="message" rows="5" data-i18n-placeholder="form_message_ph" placeholder="Ceritakan proyek Anda..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-submit" data-i18n="form_submit">Kirim Pesan</button>
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-copy">
+            <span>&copy; 2024 Kuroko Tetsuya.</span>
+            <span data-i18n="footer_copy">Semua hak dilindungi undang-undang.</span>
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!--
+      ╔══════════════════════════════════════════════════════╗
+      ║  PILIH MODE TERJEMAHAN — aktifkan SATU baris saja   ║
+      ╚══════════════════════════════════════════════════════╝
+
+      MODE 1 — Terjemahan MANUAL (dari file translations.js)
+      MODE 2 — Terjemahan OTOMATIS via API (tidak perlu edit apapun)
+      MODE 3 — TANPA terjemahan (hapus juga tombol toggle di navbar)
+    -->
+
+    <!-- MODE 1 ✅ AKTIF: terjemahan manual -->
+    <script src="translations.js"></script>
+
+    <!-- MODE 2 ❌ nonaktif: hapus komentar di bawah, komentari MODE 1 di atas -->
+    <!-- <script src="../shared/translation-api.js"></script> -->
+
+    <!-- MODE 3 ❌ nonaktif: komentari MODE 1 & 2, lalu hapus tombol toggle di navbar -->
+    <!--
+         Hapus blok ini dari navbar:
+           <button id="lang-toggle" class="lang-toggle" ...>
+             <span class="lang-option" id="lang-id">ID</span>
+             <span class="lang-separator">|</span>
+             <span class="lang-option" id="lang-en">EN</span>
+           </button>
+
+         Hapus juga CSS ini dari style.css:
+           .lang-toggle { ... }
+           .lang-toggle:hover { ... }
+           .lang-option { ... }
+           .lang-option.active { ... }
+           .lang-separator { ... }
+    -->
+
+    <!-- Logika UI utama -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
