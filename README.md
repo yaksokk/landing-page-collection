@@ -110,6 +110,5 @@ drag & drop file `index.html` ke browser favorit Anda. Selesai.
 <div align="center">
 
 **Dibangun dengan sepenuh hati.**
-*Semoga proyek ini memudahkan pekerjaan Anda.*
 
 </div>
