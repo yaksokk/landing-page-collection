@@ -11,6 +11,7 @@ Koleksi **landing page production-ready** dengan fitur bilingual Indonesia/Inggr
 | Folder | Nama | Kategori | Tema |
 |---|---|---|---|
 | `personal/` | Kuroko Tetsuya | Portofolio personal | Dark navy |
+| `coffeeshop/` | Kopi Nusantara | Brand kedai kopi | Deep espresso |
 
 ---
 
