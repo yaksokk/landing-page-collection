@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kopi Nusantara — Secangkir Cerita dari Bumi Indonesia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo smooth-scroll">
+        <i class="fa-solid fa-mug-hot nav-logo-icon"></i>
+        <span>Kopi Nusantara</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link smooth-scroll" data-i18n="nav_home">Beranda</a></li>
+        <li><a href="#menu" class="nav-link smooth-scroll" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="#about" class="nav-link smooth-scroll" data-i18n="nav_about">Tentang</a></li>
+        <li><a href="#gallery" class="nav-link smooth-scroll" data-i18n="nav_gallery">Galeri</a></li>
+        <li><a href="#contact" class="nav-link smooth-scroll" data-i18n="nav_contact">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">
+          <span class="lang-option" id="lang-id">ID</span>
+          <span class="lang-separator">|</span>
+          <span class="lang-option" id="lang-en">EN</span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#home" class="mobile-link smooth-scroll" data-i18n="nav_home">Beranda</a></li>
+        <li><a href="#menu" class="mobile-link smooth-scroll" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="#about" class="mobile-link smooth-scroll" data-i18n="nav_about">Tentang</a></li>
+        <li><a href="#gallery" class="mobile-link smooth-scroll" data-i18n="nav_gallery">Galeri</a></li>
+        <li><a href="#contact" class="mobile-link smooth-scroll" data-i18n="nav_contact">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-img" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="steam-container" aria-hidden="true">
+      <div class="steam steam-1"></div>
+      <div class="steam steam-2"></div>
+      <div class="steam steam-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-origin reveal-item" data-i18n="hero_origin">Manado, Indonesia</p>
+      <h1 class="hero-brand reveal-item">Kopi Nusantara</h1>
+      <p class="hero-tagline reveal-item" data-i18n="hero_tagline">Secangkir cerita dari bumi Indonesia</p>
+      <div class="hero-divider reveal-item">
+        <span></span>
+        <i class="fa-solid fa-leaf"></i>
+        <span></span>
+      </div>
+      <div class="hero-ctas reveal-item">
+        <a href="#menu" class="btn-primary smooth-scroll" data-i18n="hero_cta1">Lihat Menu</a>
+        <a href="#contact" class="btn-secondary smooth-scroll" data-i18n="hero_cta2">Hubungi Kami</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about-section section-reveal">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col">
+          <div class="about-img-frame">
+            <img
+              src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Kopi Nusantara Interior" />
+            <div class="about-img-badge">
+              <i class="fa-solid fa-award"></i>
+              <span>Est. 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="section-label" data-i18n="about_label">Kisah Kami</p>
+          <h2 class="section-title" data-i18n="about_title">Dari ladang kopi ke cangkir Anda</h2>
+          <p class="about-text" data-i18n="about_p1">Kopi Nusantara lahir dari satu keyakinan sederhana setiap tegukan
+            kopi seharusnya membawa Anda lebih dekat dengan bumi yang menumbuhkannya. Didirikan pada 2018 oleh Muex
+            , kedai ini bermula dari sebuah ruang kecil di sudut Manado yang kini telah berkembang menjadi rumah
+            kedua bagi ribuan pecinta kopi.</p>
+          <p class="about-text" data-i18n="about_p2">Kami bermitra langsung dengan petani kopi di Aceh, Toraja, Flores,
+            dan Flores untuk memastikan setiap biji kopi dipetik pada waktu yang tepat dan diperlakukan dengan rasa
+            hormat yang layak. Tidak ada perantara. Tidak ada kompromi pada kualitas.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <i class="fa-solid fa-seedling"></i>
+              <div>
+                <strong data-i18n="value1_title">Biji Pilihan</strong>
+                <span data-i18n="value1_desc">Langsung dari petani terpercaya di seluruh Nusantara</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fa-solid fa-fire"></i>
+              <div>
+                <strong data-i18n="value2_title">Roasted Segar</strong>
+                <span data-i18n="value2_desc">Proses sangrai dilakukan setiap minggu untuk kesegaran optimal</span>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="fa-solid fa-heart"></i>
+              <div>
+                <strong data-i18n="value3_title">Dibuat dengan Cinta</strong>
+                <span data-i18n="value3_desc">Setiap cangkir adalah karya barista berpengalaman kami</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="menu-section section-reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="menu_label">Menu Kami</p>
+        <h2 class="section-title" data-i18n="menu_title">Pilihan untuk setiap suasana hati</h2>
+        <p class="section-subtitle" data-i18n="menu_subtitle">Dibuat segar setiap hari dengan bahan-bahan terbaik
+          pilihan</p>
+      </div>
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="espresso" data-i18n="tab_espresso">Espresso</button>
+        <button class="menu-tab" data-tab="non-espresso" data-i18n="tab_non_espresso">Non-Espresso</button>
+        <button class="menu-tab" data-tab="snacks" data-i18n="tab_snacks">Camilan</button>
+      </div>
+
+      <div class="menu-panel active" id="tab-espresso">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmV8ZW58MHx8MHx8fDA%3D&w=400&h=280"
+                alt="Signature Espresso" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="esp1_name">Toraja Espresso</h3>
+                <span class="menu-price">Rp 28.000</span>
+              </div>
+              <p data-i18n="esp1_desc">Espresso tunggal dengan biji Toraja Arabica. Karakter cokelat gelap, sedikit
+                rempah, dan aftertaste yang panjang.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZmZlfGVufDB8fDB8fHww&w=400&h=280"
+                alt="Cappuccino" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="esp2_name">Nusantara Cappuccino</h3>
+                <span class="menu-price">Rp 38.000</span>
+              </div>
+              <p data-i18n="esp2_desc">Cappuccino klasik dengan espresso Aceh Gayo dan susu segar full-cream. Foam
+                lembut dengan latte art khas.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvZmZlfGVufDB8fDB8fHww&w=400&h=280"
+                alt="Cold Brew" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="esp3_name">Cold Brew Flores</h3>
+                <span class="menu-price">Rp 42.000</span>
+              </div>
+              <p data-i18n="esp3_desc">Cold brew 18 jam dari biji Flores Bajawa. Segar, rendah asam, dengan nuansa
+                cokelat susu yang halus.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlfGVufDB8fDB8fHww&w=400&h=280"
+                alt="Flat White" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="esp4_name">Flat White Signature</h3>
+                <span class="menu-price">Rp 40.000</span>
+              </div>
+              <p data-i18n="esp4_desc">Double ristretto dengan microfoam susu premium. Rasio espresso lebih tinggi untuk
+                penggemar kopi sejati.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="tab-non-espresso">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/non1/400/280" alt="Matcha Latte" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="non1_name">Matcha Latte</h3>
+                <span class="menu-price">Rp 38.000</span>
+              </div>
+              <p data-i18n="non1_desc">Ceremonial grade matcha dari Jepang, diseduh dengan susu oat premium. Earthy,
+                creamy, dan menyegarkan.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/non2/400/280" alt="Coklat Panas" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="non2_name">Cokelat Sulawesi</h3>
+                <span class="menu-price">Rp 35.000</span>
+              </div>
+              <p data-i18n="non2_desc">Minuman cokelat hangat dari biji kakao asli Sulawesi Tenggara. Kaya, intens, dan
+                sama sekali tidak artificial.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/non3/400/280" alt="Lemon Tea" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="non3_name">Es Teh Pandan Lemon</h3>
+                <span class="menu-price">Rp 28.000</span>
+              </div>
+              <p data-i18n="non3_desc">Teh pandan segar yang dipadukan dengan perasan lemon asli dan sedikit madu hutan.
+                Menyegarkan sepanjang hari.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/non4/400/280" alt="Bandrek" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="non4_name">Bandrek Jahe Susu</h3>
+                <span class="menu-price">Rp 32.000</span>
+              </div>
+              <p data-i18n="non4_desc">Minuman rempah tradisional Sunda dengan jahe segar, rempah pilihan, dan susu
+                segar. Hangat dari dalam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-panel" id="tab-snacks">
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/snack1/400/280" alt="Croissant" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="snack1_name">Croissant Mentega</h3>
+                <span class="menu-price">Rp 25.000</span>
+              </div>
+              <p data-i18n="snack1_desc">Croissant berlapis dipanggang segar setiap pagi. Renyah di luar, lembut dan
+                berdaging di dalam.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/snack2/400/280" alt="Pisang Goreng" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="snack2_name">Pisang Goreng Crispy</h3>
+                <span class="menu-price">Rp 22.000</span>
+              </div>
+              <p data-i18n="snack2_desc">Pisang Kepok pilihan digoreng garing dengan balutan tepung renyah. Disajikan
+                dengan saus karamel salted caramel.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/snack3/400/280" alt="Avocado Toast" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="snack3_name">Avocado Sourdough Toast</h3>
+                <span class="menu-price">Rp 45.000</span>
+              </div>
+              <p data-i18n="snack3_desc">Sourdough roti asam panggang dengan alpukat krim, telur poach, microgreens, dan
+                taburan fleur de sel.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <div class="menu-img-wrap">
+              <img src="https://picsum.photos/seed/snack4/400/280" alt="Dadar Gulung" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-header">
+                <h3 data-i18n="snack4_name">Dadar Gulung Pandan</h3>
+                <span class="menu-price">Rp 20.000</span>
+              </div>
+              <p data-i18n="snack4_desc">Kue tradisional pandan isi kelapa muda gula merah yang harum. Autentik,
+                nostalgic, dan selalu habis cepat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US SECTION ===== -->
+  <section id="why-us" class="why-section section-reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="why_label">Keunggulan Kami</p>
+        <h2 class="section-title" data-i18n="why_title">Mengapa memilih Kopi Nusantara?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-medal"></i></div>
+          <h3 data-i18n="why1_title">Biji Kopi Premium</h3>
+          <p data-i18n="why1_desc">Kami hanya menggunakan biji kopi specialty grade yang dipilih langsung dari petani
+            mitra kami di berbagai daerah penghasil kopi terbaik Indonesia.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <h3 data-i18n="why2_title">Barista Terlatih</h3>
+          <p data-i18n="why2_desc">Setiap barista kami telah melalui pelatihan intensif dan bersertifikasi. Mereka tidak
+            sekadar membuat kopi, mereka menceritakan kisah di setiap cangkir.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-couch"></i></div>
+          <h3 data-i18n="why3_title">Suasana yang Nyaman</h3>
+          <p data-i18n="why3_desc">Desain interior kami perpaduan estetika modern dan sentuhan tradisional Nusantara.
+            Tempat sempurna untuk bekerja, berdiskusi, atau sekadar menikmati waktu sendiri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="gallery-section section-reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="gallery_label">Galeri</p>
+        <h2 class="section-title" data-i18n="gallery_title">Momen di Kopi Nusantara</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large">
+          <img src="https://images.unsplash.com/photo-1556740767-414a9c4860c1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8OHx8Y29mZmV8ZW58MHx8MHx8fDA%3D&w=800&h=600" alt="Gallery 1" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MTV8fGNvZmZlfGVufDB8fDB8fHww&w=400&h=300" alt="Gallery 2" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1645677069221-af4c5510e908?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvZmZlc2hvcHxlbnwwfHwwfHx8MA%3D%3D&w=400&h=300" alt="Gallery 3" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1654013079681-071bbad6fc1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvZmZlc2hvcHxlbnwwfHwwfHx8MA%3D%3Dw=400&h=300" alt="Gallery 4" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1692256848389-879ded31fcd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVzaG9wfGVufDB8fDB8fHwww=400&h=300" alt="Gallery 5" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1462917882517-e150004895fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZmZlc2hvcHxlbnwwfHwwfHx8MA%3D%3D=400&h=300" alt="Gallery 6" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section id="testimonials" class="testimonials-section section-reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="testi_label">Testimoni</p>
+        <h2 class="section-title" data-i18n="testi_title">Cerita dari pelanggan setia kami</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote" data-i18n="testi1_quote">"Satu-satunya kedai kopi yang membuat saya rela mengantre 20
+            menit setiap pagi. Cold Brew Flores mereka adalah yang terbaik yang pernah saya coba, bahkan setelah saya
+            mencoba kopi di berbagai kota di Asia."</p>
+          <div class="testi-author">
+            <img src="https://picsum.photos/seed/ctesti1/80/80" alt="Farhan" class="testi-avatar" />
+            <div>
+              <strong>Farhan Aditya</strong>
+              <span data-i18n="testi1_role">Arsitek, Manado</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-quote" data-i18n="testi2_quote">"Sebagai penikmat kopi yang sudah mengunjungi ratusan kedai,
+            saya bisa bilang Kopi Nusantara adalah yang paling konsisten dalam kualitas. Setiap kali datang rasanya
+            selalu sama baiknya."</p>
+          <div class="testi-author">
+            <img src="https://picsum.photos/seed/ctesti2/80/80" alt="Sari" class="testi-avatar" />
+            <div>
+              <strong>Sari Dewi Lestari</strong>
+              <span data-i18n="testi2_role">Food Blogger</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testi-quote" data-i18n="testi3_quote">"Tempat favorit saya untuk meeting dengan klien. Suasananya
+            profesional tapi tetap hangat. Tim barista mereka ramah dan Avocado Toast-nya luar biasa. Selalu
+            merekomendasikan tempat ini."</p>
+          <div class="testi-author">
+            <img src="https://picsum.photos/seed/ctesti3/80/80" alt="Hendra" class="testi-avatar" />
+            <div>
+              <strong>Hendra Kurniawan</strong>
+              <span data-i18n="testi3_role">Konsultan Bisnis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section section-reveal">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="contact_label">Kontak</p>
+        <h2 class="section-title" data-i18n="contact_title">Kunjungi kami atau hubungi kami</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="contact-map-placeholder">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.767414883482!2d124.82477468172735!3d1.462883239313393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3287750005416a25%3A0x3e7d1d9fe4f575ab!2sSUNSET%20POINT%20BAHU%20MANADO!5e0!3m2!1sid!2sid!4v1777299076120!5m2!1sid!2sid"
+              width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong data-i18n="contact_address_label">Alamat</strong>
+                <span>Jl. Minahasa No. 45, Manado, Jawa Barat 40115</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong data-i18n="contact_hours_label">Jam Operasional</strong>
+                <span data-i18n="contact_hours">Senin-Jumat: 07.00-22.00 | Sabtu-Minggu: 08.00-23.00</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>+62 22 1234 5678</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-col">
+          <form id="contact-form" action="" method="POST">
+            <div class="form-group">
+              <label for="name" data-i18n="form_name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="form_name_ph" placeholder="Nama Anda"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form_email">Email</label>
+              <input type="email" id="email" name="email" data-i18n-placeholder="form_email_ph"
+                placeholder="email@anda.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject" data-i18n="form_subject">Subjek</label>
+              <input type="text" id="subject" name="subject" data-i18n-placeholder="form_subject_ph"
+                placeholder="Reservasi, kerjasama, dll" required />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form_message">Pesan</label>
+              <textarea id="message" name="message" rows="5" data-i18n-placeholder="form_message_ph"
+                placeholder="Sampaikan pertanyaan atau permintaan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-submit" data-i18n="form_submit">Kirim Pesan</button>
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Kopi Nusantara</span>
+          </div>
+          <p data-i18n="footer_tagline">Secangkir cerita dari bumi Indonesia</p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kopi Nusantara. <span data-i18n="footer_rights">Semua hak dilindungi undang-undang.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!--
+      ╔══════════════════════════════════════════════════════╗
+      ║  PILIH MODE TERJEMAHAN — aktifkan SATU baris saja   ║
+      ╚══════════════════════════════════════════════════════╝
+
+      MODE 1 — Terjemahan MANUAL (dari file translations.js)
+      MODE 2 — Terjemahan OTOMATIS via API (tidak perlu edit apapun)
+      MODE 3 — TANPA terjemahan (hapus juga tombol toggle di navbar)
+    -->
+
+    <!-- MODE 1 ✅ AKTIF: terjemahan manual -->
+    <script src="translations.js"></script>
+
+    <!-- MODE 2 ❌ nonaktif: hapus komentar di bawah, komentari MODE 1 di atas -->
+    <!-- <script src="../shared/translation-api.js"></script> -->
+
+    <!-- MODE 3 ❌ nonaktif: komentari MODE 1 & 2, lalu hapus tombol toggle di navbar -->
+    <!--
+         Hapus blok ini dari navbar:
+           <button id="lang-toggle" class="lang-toggle" ...>
+             <span class="lang-option" id="lang-id">ID</span>
+             <span class="lang-separator">|</span>
+             <span class="lang-option" id="lang-en">EN</span>
+           </button>
+
+         Hapus juga CSS ini dari style.css:
+           .lang-toggle { ... }
+           .lang-toggle:hover { ... }
+           .lang-option { ... }
+           .lang-option.active { ... }
+           .lang-separator { ... }
+    -->
+
+    <!-- Logika UI utama -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
