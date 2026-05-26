@@ -12,6 +12,7 @@ Koleksi **landing page production-ready** dengan fitur bilingual Indonesia/Inggr
 |---|---|---|---|
 | `personal/` | Kuroko Tetsuya | Portofolio personal | Dark navy |
 | `coffeeshop/` | Kopi Nusantara | Brand kedai kopi | Deep espresso |
+| `psikolog/` | Dr. Anisa Rahmawati | Mental health professional | Light mint |
 
 ---
 
