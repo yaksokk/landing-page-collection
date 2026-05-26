@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Anisa Rahmawati, M.Psi. — Psikolog Klinis Surabaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo smooth-scroll">
+          <div class="nav-logo-mark">A</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Dr. Anisa Rahmawati</span>
+            <span class="nav-logo-cred">M.Psi., Psikolog</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link smooth-scroll" data-i18n="nav_home">Beranda</a></li>
+          <li><a href="#about" class="nav-link smooth-scroll" data-i18n="nav_about">Tentang</a></li>
+          <li><a href="#services" class="nav-link smooth-scroll" data-i18n="nav_services">Layanan</a></li>
+          <li><a href="#process" class="nav-link smooth-scroll" data-i18n="nav_process">Proses</a></li>
+          <li><a href="#testimonials" class="nav-link smooth-scroll" data-i18n="nav_testimonials">Testimoni</a></li>
+          <li><a href="#contact" class="nav-link smooth-scroll" data-i18n="nav_contact">Kontak</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">
+            <span class="lang-option" id="lang-id">ID</span>
+            <span class="lang-separator">|</span>
+            <span class="lang-option" id="lang-en">EN</span>
+          </button>
+          <a href="#contact" class="btn-primary btn-nav smooth-scroll" data-i18n="nav_cta">Buat Janji</a>
+          <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="#home" class="mobile-link smooth-scroll" data-i18n="nav_home">Beranda</a></li>
+          <li><a href="#about" class="mobile-link smooth-scroll" data-i18n="nav_about">Tentang</a></li>
+          <li><a href="#services" class="mobile-link smooth-scroll" data-i18n="nav_services">Layanan</a></li>
+          <li><a href="#process" class="mobile-link smooth-scroll" data-i18n="nav_process">Proses</a></li>
+          <li><a href="#testimonials" class="mobile-link smooth-scroll" data-i18n="nav_testimonials">Testimoni</a></li>
+          <li><a href="#contact" class="mobile-link smooth-scroll" data-i18n="nav_contact">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text-col">
+            <div class="hero-badge reveal-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span data-i18n="hero_badge">Terdaftar HIMPSI No. 1234/PSI/2016</span>
+            </div>
+            <h1 class="hero-name reveal-item">Dr. Anisa <br />Rahmawati</h1>
+            <p class="hero-cred reveal-item">M.Psi., Psikolog Klinis</p>
+            <p class="hero-tagline reveal-item" data-i18n="hero_tagline">
+              Ruang aman untuk tumbuh, sembuh, dan memahami diri sendiri. Bersama, kita jalani perjalanan menuju kesehatan mental yang lebih baik.
+            </p>
+            <div class="hero-trust reveal-item">
+              <div class="trust-item">
+                <i class="fa-solid fa-certificate"></i>
+                <span data-i18n="trust_licensed">Berlisensi Resmi</span>
+              </div>
+              <div class="trust-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span data-i18n="trust_experience">8 Tahun Pengalaman</span>
+              </div>
+              <div class="trust-item">
+                <i class="fa-solid fa-users"></i>
+                <span data-i18n="trust_clients">500+ Klien</span>
+              </div>
+            </div>
+            <div class="hero-ctas reveal-item">
+              <a href="#contact" class="btn-primary smooth-scroll" data-i18n="hero_cta1">Buat Janji Temu</a>
+              <a href="#services" class="btn-secondary smooth-scroll" data-i18n="hero_cta2">Konsultasi Gratis</a>
+            </div>
+          </div>
+          <div class="hero-img-col reveal-item">
+            <div class="hero-img-wrapper">
+              <img src="https://picsum.photos/seed/psikolog-dr/500/620" alt="Dr. Anisa Rahmawati" class="hero-photo" />
+              <div class="hero-img-card card-top">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                  <strong>4.9 / 5.0</strong>
+                  <span data-i18n="card_rating">Rating Klien</span>
+                </div>
+              </div>
+              <div class="hero-img-card card-bottom">
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                  <strong data-i18n="card_sessions">1.200+</strong>
+                  <span data-i18n="card_sessions_label">Sesi Terapi</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section section-reveal">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img-col">
+            <img src="https://picsum.photos/seed/psikolog-about/520/580" alt="Dr. Anisa di ruang praktik" class="about-img" />
+          </div>
+          <div class="about-text-col">
+            <p class="section-label" data-i18n="about_label">Tentang Saya</p>
+            <h2 class="section-title" data-i18n="about_title">Hadir sepenuhnya untuk perjalanan Anda</h2>
+            <p class="about-text" data-i18n="about_p1">
+              Saya percaya bahwa setiap orang memiliki kapasitas untuk pulih dan berkembang. Sebagai psikolog klinis dengan latar belakang dari Universitas Airlangga dan spesialisasi dari RSUD Dr. Soetomo, saya mendedikasikan diri untuk menciptakan ruang yang aman, non-judgmental, dan penuh empati bagi setiap klien.
+            </p>
+            <p class="about-text" data-i18n="about_p2">
+              Pendekatan saya menggabungkan Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), dan teknik mindfulness yang terbukti secara ilmiah untuk membantu Anda menavigasi kecemasan, depresi, tantangan hubungan, dan pengembangan diri.
+            </p>
+            <div class="about-credentials">
+              <div class="cred-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span data-i18n="cred1">S2 Psikologi Klinis, Universitas Airlangga (2015)</span>
+              </div>
+              <div class="cred-item">
+                <i class="fa-solid fa-hospital"></i>
+                <span data-i18n="cred2">Spesialis, RSUD Dr. Soetomo Surabaya (2016)</span>
+              </div>
+              <div class="cred-item">
+                <i class="fa-solid fa-id-card"></i>
+                <span data-i18n="cred3">Anggota HIMPSI (Himpunan Psikologi Indonesia)</span>
+              </div>
+              <div class="cred-item">
+                <i class="fa-solid fa-certificate"></i>
+                <span data-i18n="cred4">Certified CBT Practitioner, Beck Institute (2018)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="services-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="services_label">Layanan</p>
+          <h2 class="section-title" data-i18n="services_title">Layanan yang saya tawarkan</h2>
+          <p class="section-subtitle" data-i18n="services_subtitle">Setiap layanan dirancang untuk memenuhi kebutuhan unik Anda dalam perjalanan menuju kesehatan mental</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-person"></i></div>
+            <h3 data-i18n="svc1_title">Terapi Individual</h3>
+            <p data-i18n="svc1_desc">Sesi pribadi satu-satu yang dirancang khusus untuk mengatasi kecemasan, depresi, trauma, dan tantangan pribadi lainnya dalam lingkungan yang aman dan terpercaya.</p>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 menit</span>
+              <span class="service-price" data-i18n="svc1_price">Mulai Rp 350.000</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3 data-i18n="svc2_title">Konseling Pasangan</h3>
+            <p data-i18n="svc2_desc">Membantu pasangan membangun komunikasi yang lebih sehat, menyelesaikan konflik, dan memperkuat ikatan emosional untuk hubungan yang lebih bermakna dan bahagia.</p>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 90 menit</span>
+              <span class="service-price" data-i18n="svc2_price">Mulai Rp 500.000</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3 data-i18n="svc3_title">Sesi Kelompok</h3>
+            <p data-i18n="svc3_desc">Terapi kelompok kecil (4-8 orang) dengan tema tertentu seperti manajemen stres, kecemasan sosial, atau pengembangan diri. Belajar dan bertumbuh bersama dalam komunitas yang mendukung.</p>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 120 menit</span>
+              <span class="service-price" data-i18n="svc3_price">Rp 200.000 / orang</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+            <h3 data-i18n="svc4_title">Konsultasi Online</h3>
+            <p data-i18n="svc4_desc">Layanan terapi melalui video call untuk klien di mana saja. Fleksibel, privat, dan sama efektifnya dengan sesi tatap muka. Tersedia via Zoom atau Google Meet.</p>
+            <div class="service-meta">
+              <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 menit</span>
+              <span class="service-price" data-i18n="svc4_price">Mulai Rp 300.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESS SECTION ===== -->
+    <section id="process" class="process-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="process_label">Proses</p>
+          <h2 class="section-title" data-i18n="process_title">Bagaimana cara kerjanya?</h2>
+          <p class="section-subtitle" data-i18n="process_subtitle">Empat langkah sederhana menuju perjalanan kesehatan mental Anda</p>
+        </div>
+        <div class="process-timeline">
+          <div class="process-line" id="process-line"></div>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3 data-i18n="step1_title">Daftar</h3>
+                <p data-i18n="step1_desc">Isi formulir pendaftaran online atau hubungi kami langsung. Kami akan merespons dalam 24 jam untuk mengkonfirmasi jadwal Anda.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3 data-i18n="step2_title">Konsultasi Awal</h3>
+                <p data-i18n="step2_desc">Sesi perkenalan 30 menit gratis untuk memahami kebutuhan Anda, menjawab pertanyaan, dan menentukan pendekatan terapi yang paling tepat.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3 data-i18n="step3_title">Sesi Terapi</h3>
+                <p data-i18n="step3_desc">Mulai perjalanan terapi dengan rencana yang terstruktur dan personal. Setiap sesi dirancang untuk membantu Anda maju selangkah lebih dekat menuju tujuan Anda.</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3 data-i18n="step4_title">Evaluasi</h3>
+                <p data-i18n="step4_desc">Tinjauan berkala untuk mengukur kemajuan, menyesuaikan rencana terapi, dan merayakan pencapaian Anda. Perjalanan ini milik Anda sepenuhnya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="testimonials-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="testi_label">Testimoni</p>
+          <h2 class="section-title" data-i18n="testi_title">Cerita perubahan dari klien kami</h2>
+          <p class="section-subtitle" data-i18n="testi_subtitle">Identitas dirahasiakan untuk menjaga privasi dan kepercayaan klien</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote" data-i18n="testi1_quote">"Saya datang dengan kecemasan yang sudah mengganggu hidup saya selama bertahun-tahun. Setelah 3 bulan bersama Dr. Anisa, saya akhirnya bisa tidur nyenyak dan kembali menikmati hal-hal kecil dalam hidup. Terima kasih sebesar-besarnya."</p>
+            <div class="testi-author">
+              <div class="testi-avatar-initial">R.A.</div>
+              <div>
+                <strong>R.A.</strong>
+                <span data-i18n="testi1_info">Karyawan swasta, 29 tahun</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote" data-i18n="testi2_quote">"Kami hampir menyerah pada hubungan kami. Konseling pasangan dengan Dr. Anisa membantu kami belajar mendengar satu sama lain kembali. Sekarang komunikasi kami jauh lebih baik dan kami merasa lebih dekat dari sebelumnya."</p>
+            <div class="testi-author">
+              <div class="testi-avatar-initial">B.K.</div>
+              <div>
+                <strong>B.K. &amp; D.K.</strong>
+                <span data-i18n="testi2_info">Pasangan, 32 dan 30 tahun</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testi-quote" data-i18n="testi3_quote">"Sesi online sangat membantu saya yang tinggal di luar kota. Dr. Anisa sangat profesional dan membuat saya merasa nyaman sejak pertemuan pertama. Tidak pernah menyangka terapi bisa mengubah perspektif hidup saya sebanyak ini."</p>
+            <div class="testi-author">
+              <div class="testi-avatar-initial">L.S.</div>
+              <div>
+                <strong>L.S.</strong>
+                <span data-i18n="testi3_info">Mahasiswa S2, 26 tahun</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="testi-quote" data-i18n="testi4_quote">"Sesi kelompok manajemen stres benar-benar membuka mata saya. Mengetahui bahwa orang lain juga mengalami hal yang sama membuat saya merasa tidak sendirian. Dr. Anisa memfasilitasi dengan sangat terampil dan penuh kehangatan."</p>
+            <div class="testi-author">
+              <div class="testi-avatar-initial">M.P.</div>
+              <div>
+                <strong>M.P.</strong>
+                <span data-i18n="testi4_info">Ibu rumah tangga, 35 tahun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section id="faq" class="faq-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="faq_label">FAQ</p>
+          <h2 class="section-title" data-i18n="faq_title">Pertanyaan yang sering diajukan</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq1_q">Apakah sesi terapi bersifat rahasia?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq1_a">Ya, sepenuhnya. Semua informasi yang Anda bagikan dalam sesi terapi dijaga kerahasiaannya sesuai kode etik psikologi dan hukum yang berlaku. Saya tidak akan mengungkapkan informasi Anda kepada siapapun tanpa persetujuan tertulis Anda, kecuali dalam kondisi darurat yang mengancam keselamatan jiwa.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq2_q">Berapa lama saya membutuhkan terapi?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq2_a">Durasi terapi sangat individual. Beberapa klien merasakan kemajuan signifikan dalam 6-8 sesi, sementara kondisi yang lebih kompleks mungkin membutuhkan proses yang lebih panjang. Kita akan mengevaluasi kemajuan Anda secara berkala bersama-sama untuk menentukan langkah terbaik selanjutnya.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq3_q">Apakah konsultasi online sama efektifnya?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq3_a">Banyak penelitian telah membuktikan bahwa terapi online, ketika dilakukan dengan benar, sama efektifnya dengan sesi tatap muka untuk sebagian besar kondisi. Saya menggunakan platform video call yang aman dan terenkripsi untuk memastikan privasi dan kenyamanan Anda selama sesi berlangsung.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq4_q">Bagaimana cara membatalkan atau menjadwal ulang sesi?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq4_a">Anda dapat membatalkan atau menjadwal ulang sesi maksimal 24 jam sebelum jadwal yang ditentukan tanpa dikenakan biaya. Pembatalan kurang dari 24 jam akan dikenakan biaya sebesar 50% dari tarif sesi. Hal ini untuk menghormati waktu yang telah dialokasikan untuk Anda.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq5_q">Apakah Anda menerima asuransi kesehatan?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq5_a">Saat ini kami menerima beberapa asuransi kesehatan swasta tertentu. Silakan hubungi kami terlebih dahulu untuk mengkonfirmasi apakah asuransi Anda termasuk dalam daftar yang kami terima. Kami juga menyediakan surat keterangan resmi untuk pengajuan reimbursement dari perusahaan Anda.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section section-reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-i18n="contact_label">Kontak</p>
+          <h2 class="section-title" data-i18n="contact_title">Ambil langkah pertama hari ini</h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">Menghubungi kami adalah tindakan berani yang patut Anda banggakan</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong data-i18n="ci_address">Alamat Praktik</strong>
+                <span>Jl. Raya Darmo No. 88, Wonokromo, Surabaya 60241</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong data-i18n="ci_phone">Telepon / WhatsApp</strong>
+                <span>+62 812 9876 5432</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>dr.anisa.psikolog@email.com</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fa-solid fa-calendar-days"></i></div>
+              <div>
+                <strong data-i18n="ci_hours">Jam Praktik</strong>
+                <span data-i18n="ci_hours_val">Senin-Jumat: 09.00-18.00 WIB</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-col">
+            <form id="contact-form" action="" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" data-i18n="form_name">Nama Lengkap</label>
+                  <input type="text" id="name" name="name" data-i18n-placeholder="form_name_ph" placeholder="Nama Anda" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone" data-i18n="form_phone">Nomor Telepon</label>
+                  <input type="tel" id="phone" name="phone" data-i18n-placeholder="form_phone_ph" placeholder="+62 8xx xxxx xxxx" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="form_email">Email</label>
+                <input type="email" id="email" name="email" data-i18n-placeholder="form_email_ph" placeholder="email@anda.com" required />
+              </div>
+              <div class="form-group">
+                <label for="service" data-i18n="form_service">Layanan yang Diminati</label>
+                <select id="service" name="service">
+                  <option value="" data-i18n="form_service_ph">Pilih layanan...</option>
+                  <option data-i18n="svc_opt1">Terapi Individual</option>
+                  <option data-i18n="svc_opt2">Konseling Pasangan</option>
+                  <option data-i18n="svc_opt3">Sesi Kelompok</option>
+                  <option data-i18n="svc_opt4">Konsultasi Online</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="schedule" data-i18n="form_schedule">Jadwal yang Diinginkan</label>
+                <input type="text" id="schedule" name="schedule" data-i18n-placeholder="form_schedule_ph" placeholder="Contoh: Senin pagi, atau Kamis sore" />
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="form_message">Pesan</label>
+                <textarea id="message" name="message" rows="4" data-i18n-placeholder="form_message_ph" placeholder="Ceritakan sedikit tentang apa yang ingin Anda diskusikan (opsional)..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-submit" data-i18n="form_submit">Kirim Permintaan Janji</button>
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-logo-mark">A</div>
+            <div>
+              <strong>Dr. Anisa Rahmawati, M.Psi.</strong>
+              <span data-i18n="footer_cred">Psikolog Klinis Berlisensi</span>
+            </div>
+          </div>
+          <p class="footer-disclaimer" data-i18n="footer_disclaimer">
+            Layanan ini bukan pengganti perawatan darurat kesehatan mental. Jika Anda dalam keadaan darurat, segera hubungi Into The Light Indonesia di 119 ext 8.
+          </p>
+          <p class="footer-copy">&copy; 2024 Dr. Anisa Rahmawati. <span data-i18n="footer_rights">Semua hak dilindungi undang-undang.</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!--
+      ╔══════════════════════════════════════════════════════╗
+      ║  PILIH MODE TERJEMAHAN — aktifkan SATU baris saja   ║
+      ╚══════════════════════════════════════════════════════╝
+
+      MODE 1 — Terjemahan MANUAL (dari file translations.js)
+      MODE 2 — Terjemahan OTOMATIS via API (tidak perlu edit apapun)
+      MODE 3 — TANPA terjemahan (hapus juga tombol toggle di navbar)
+    -->
+
+    <!-- MODE 1 ✅ AKTIF: terjemahan manual -->
+    <script src="translations.js"></script>
+
+    <!-- MODE 2 ❌ nonaktif: hapus komentar di bawah, komentari MODE 1 di atas -->
+    <!-- <script src="../shared/translation-api.js"></script> -->
+
+    <!-- MODE 3 ❌ nonaktif: komentari MODE 1 & 2, lalu hapus tombol toggle di navbar -->
+    <!--
+         Hapus blok ini dari navbar:
+           <button id="lang-toggle" class="lang-toggle" ...>
+             <span class="lang-option" id="lang-id">ID</span>
+             <span class="lang-separator">|</span>
+             <span class="lang-option" id="lang-en">EN</span>
+           </button>
+
+         Hapus juga CSS ini dari style.css:
+           .lang-toggle { ... }
+           .lang-toggle:hover { ... }
+           .lang-option { ... }
+           .lang-option.active { ... }
+           .lang-separator { ... }
+    -->
+
+    <!-- Logika UI utama -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
