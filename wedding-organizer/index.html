@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ackerman Bridal — Wedding Organizer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Grain overlay -->
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-text">Ackerman</span>
+      <span class="logo-sub">BRIDAL</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#paket">Paket</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <a href="#kontak" class="nav-cta">Konsultasi Gratis</a>
+    <button class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-circle c1"></div>
+      <div class="hero-circle c2"></div>
+      <div class="hero-circle c3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Wedding Organizer Premium</p>
+      <h1 class="hero-title reveal">
+        <span class="line">Kisah Cinta</span>
+        <span class="line italic">Yang Sempurna</span>
+        <span class="line">Dimulai di Sini</span>
+      </h1>
+      <p class="hero-desc reveal">Kami hadir untuk mengubah hari istimewa Anda menjadi memori abadi yang tak terlupakan. Dipercaya lebih dari 500 pasangan bahagia.</p>
+      <div class="hero-actions reveal">
+        <a href="#paket" class="btn-primary">Lihat Paket Kami</a>
+        <a href="#galeri" class="btn-ghost">Portofolio ↗</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <path id="circlePath" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+          </defs>
+          <text fill="#b89f6a">
+            <textPath href="#circlePath">★ SINCE 2018 ★ ACKERMAN BRIDAL ★ WEDDING ORGANIZER ★</textPath>
+          </text>
+        </svg>
+        <span class="badge-icon">💍</span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="numbers">
+    <div class="numbers-inner">
+      <div class="num-item reveal">
+        <span class="num" data-target="500">0</span><span class="num-plus">+</span>
+        <p>Pasangan Bahagia</p>
+      </div>
+      <div class="num-divider"></div>
+      <div class="num-item reveal">
+        <span class="num" data-target="8">0</span><span class="num-plus"> Tahun</span>
+        <p>Pengalaman</p>
+      </div>
+      <div class="num-divider"></div>
+      <div class="num-item reveal">
+        <span class="num" data-target="120">0</span><span class="num-plus">+</span>
+        <p>Vendor Partner</p>
+      </div>
+      <div class="num-divider"></div>
+      <div class="num-item reveal">
+        <span class="num" data-target="98">0</span><span class="num-plus">%</span>
+        <p>Kepuasan Klien</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section class="layanan" id="layanan">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Layanan Kami</p>
+      <h2 class="section-title">Setiap Detail<br><em>Direncanakan dengan Cinta</em></h2>
+    </div>
+    <div class="layanan-grid">
+      <div class="layanan-card reveal" style="--delay:0.1s">
+        <div class="card-icon">🌸</div>
+        <h3>Dekorasi & Florist</h3>
+        <p>Rangkaian bunga segar dan dekorasi venue yang memukau sesuai tema impian Anda.</p>
+        <a href="#" class="card-link">Pelajari →</a>
+      </div>
+      <div class="layanan-card reveal" style="--delay:0.2s">
+        <div class="card-icon">🍽️</div>
+        <h3>Katering Premium</h3>
+        <p>Sajian kuliner pilihan dari chef berpengalaman untuk memanjakan selera tamu undangan.</p>
+        <a href="#" class="card-link">Pelajari →</a>
+      </div>
+      <div class="layanan-card reveal" style="--delay:0.3s">
+        <div class="card-icon">📸</div>
+        <h3>Foto & Videografi</h3>
+        <p>Dokumentasi momen berharga dengan sentuhan artistik berkelas oleh fotografer terbaik.</p>
+        <a href="#" class="card-link">Pelajari →</a>
+      </div>
+      <div class="layanan-card reveal" style="--delay:0.4s">
+        <div class="card-icon">🎵</div>
+        <h3>Hiburan & Musik</h3>
+        <p>Live band, DJ, dan entertainment pilihan untuk menghadirkan suasana pesta yang meriah.</p>
+        <a href="#" class="card-link">Pelajari →</a>
+      </div>
+      <div class="layanan-card reveal" style="--delay:0.5s">
+        <div class="card-icon">👗</div>
+        <h3>Busana Pengantin</h3>
+        <p>Koleksi gaun dan jas pengantin eksklusif dari desainer ternama pilihan.</p>
+        <a href="#" class="card-link">Pelajari →</a>
+      </div>
+      <div class="layanan-card reveal" style="--delay:0.6s">
+        <div class="card-icon">🚗</div>
+        <h3>Transportasi Mewah</h3>
+        <p>Armada kendaraan premium untuk mengantar Anda ke momen paling bersejarah.</p>
+        <a href="#" class="card-link">Pelajari →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKET -->
+  <section class="paket" id="paket">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Pilih Paket</p>
+      <h2 class="section-title">Paket Pernikahan<br><em>Sesuai Impian Anda</em></h2>
+    </div>
+    <div class="paket-grid">
+      <div class="paket-card reveal">
+        <p class="paket-label">Silver</p>
+        <h3 class="paket-name">Intimate</h3>
+        <p class="paket-price">Rp 45 <span>Juta</span></p>
+        <ul class="paket-features">
+          <li>✓ Dekorasi Venue</li>
+          <li>✓ Katering 100 Tamu</li>
+          <li>✓ Dokumentasi Foto</li>
+          <li>✓ Wedding Planner</li>
+          <li>✓ MC Profesional</li>
+          <li class="muted">✗ Video Sinematik</li>
+          <li class="muted">✗ Live Band</li>
+        </ul>
+        <a href="#kontak" class="btn-outline">Pilih Paket</a>
+      </div>
+      <div class="paket-card featured reveal">
+        <div class="paket-badge-top">Paling Populer</div>
+        <p class="paket-label">Gold</p>
+        <h3 class="paket-name">Grand</h3>
+        <p class="paket-price">Rp 85 <span>Juta</span></p>
+        <ul class="paket-features">
+          <li>✓ Dekorasi Premium</li>
+          <li>✓ Katering 250 Tamu</li>
+          <li>✓ Foto + Video Sinematik</li>
+          <li>✓ Wedding Planner Senior</li>
+          <li>✓ MC + Live Band</li>
+          <li>✓ Busana Pengantin</li>
+          <li class="muted">✗ Bulan Madu</li>
+        </ul>
+        <a href="#kontak" class="btn-primary">Pilih Paket</a>
+      </div>
+      <div class="paket-card reveal">
+        <p class="paket-label">Platinum</p>
+        <h3 class="paket-name">Royal</h3>
+        <p class="paket-price">Rp 150 <span>Juta</span></p>
+        <ul class="paket-features">
+          <li>✓ Dekorasi Eksklusif</li>
+          <li>✓ Katering 500 Tamu</li>
+          <li>✓ Full Dokumentasi</li>
+          <li>✓ Tim Planner Dedicated</li>
+          <li>✓ Entertainment Full</li>
+          <li>✓ Busana Couture</li>
+          <li>✓ Paket Bulan Madu</li>
+        </ul>
+        <a href="#kontak" class="btn-outline">Pilih Paket</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="galeri" id="galeri">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Galeri</p>
+      <h2 class="section-title">Momen Indah<br><em>Yang Kami Abadikan</em></h2>
+    </div>
+    <div class="galeri-grid">
+      <div class="galeri-item g1 reveal"><div class="galeri-inner"><span>Levi & Mikasa</span><p>Grand Ballroom Jakarta</p></div></div>
+      <div class="galeri-item g2 reveal"><div class="galeri-inner"><span>Armin & Annie</span><p>Garden Wedding Bandung</p></div></div>
+      <div class="galeri-item g3 reveal"><div class="galeri-inner"><span>Eren & Historia</span><p>Intimate Bali Beach</p></div></div>
+      <div class="galeri-item g4 reveal"><div class="galeri-inner"><span>Reiner & Bertholdt</span><p>Classic Church Surabaya</p></div></div>
+      <div class="galeri-item g5 reveal"><div class="galeri-inner"><span>Jean & Sasha</span><p>Rustic Yogyakarta</p></div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="testimoni">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Kata Mereka</p>
+      <h2 class="section-title">Kebahagiaan<br><em>Adalah Bukti Kami</em></h2>
+    </div>
+    <div class="testi-wrapper">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Ackerman Bridal benar-benar mewujudkan impian pernikahan kami. Setiap detail diurus dengan sangat profesional dan penuh kasih."</p>
+          <div class="testi-author"><strong>Levi & Mikasa</strong><span>Oktober 2024</span></div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Dari dekorasi hingga katering, semuanya sempurna! Tim Ackerman Bridal sangat responsif dan kreatif. Highly recommended!"</p>
+          <div class="testi-author"><strong>Armin & Annie</strong><span>September 2024</span></div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Paket Royal benar-benar worth it! Hari pernikahan kami menjadi seperti dongeng. Terima kasih tim Ackerman Bridal!"</p>
+          <div class="testi-author"><strong>Eren & Historia</strong><span>Agustus 2024</span></div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Profesional, detail, dan hati-hati. Semua vendor yang direkomendasikan berkualitas tinggi. Wedding kami jadi luar biasa!"</p>
+          <div class="testi-author"><strong>Jean & Sasha</strong><span>Juli 2024</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="kontak" id="kontak">
+    <div class="kontak-inner">
+      <div class="kontak-left reveal">
+        <p class="section-eyebrow">Hubungi Kami</p>
+        <h2 class="section-title">Mari Wujudkan<br><em>Hari Spesial Anda</em></h2>
+        <p>Konsultasikan impian pernikahan Anda bersama kami. Tim kami siap membantu 24/7.</p>
+        <div class="kontak-info">
+          <div class="info-item">📞 <span>+62 812 3456 7890</span></div>
+          <div class="info-item">✉️ <span>hello@ackermanbridal.id</span></div>
+          <div class="info-item">📍 <span>Jl. Sudirman No. 88, Jakarta Selatan</span></div>
+        </div>
+      </div>
+      <div class="kontak-right reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" placeholder="Nama Lengkap" required />
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="No. WhatsApp" />
+            <input type="date" placeholder="Tanggal Pernikahan" />
+          </div>
+          <select>
+            <option value="">Pilih Paket</option>
+            <option>Intimate (Rp 45 Juta)</option>
+            <option>Grand (Rp 85 Juta)</option>
+            <option>Royal (Rp 150 Juta)</option>
+          </select>
+          <textarea placeholder="Ceritakan impian pernikahan Anda..."></textarea>
+          <button type="submit" class="btn-primary full">Kirim Pesan 💌</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="logo-text">Ackerman</span>
+      <span class="logo-sub">BRIDAL</span>
+    </div>
+    <p>© 2025 Ackerman Bridal. All rights reserved. Made with ♥ for love stories.</p>
+    <div class="footer-socials">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Pinterest</a>
+      <a href="#">YouTube</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
