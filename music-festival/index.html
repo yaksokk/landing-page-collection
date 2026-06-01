@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MESSIFEST 2025 — Music Festival</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Scanlines -->
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">MESSI<span>FEST</span></div>
+    <ul class="nav-links">
+      <li><a href="#lineup">Lineup</a></li>
+      <li><a href="#stages">Stages</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#tickets">Tickets</a></li>
+    </ul>
+    <a href="#tickets" class="nav-ticket">BUY TICKETS</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb o1"></div>
+      <div class="orb o2"></div>
+      <div class="orb o3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-dates">14 — 16 NOVEMBER 2025</div>
+      <h1 class="hero-title">
+        <span class="ht1">MESSI</span>
+        <span class="ht2">FEST</span>
+        <span class="ht3">2025</span>
+      </h1>
+      <div class="hero-sub">
+        <div class="glitch-text" data-text="THE GREATEST FESTIVAL ON EARTH">THE GREATEST FESTIVAL ON EARTH</div>
+      </div>
+      <p class="hero-location">📍 GBK SENAYAN, JAKARTA · 3 DAYS · 5 STAGES · 60+ ARTIS</p>
+      <div class="hero-actions">
+        <a href="#tickets" class="btn-neon">GET TICKETS NOW →</a>
+        <a href="#lineup" class="btn-ghost">VIEW LINEUP</a>
+      </div>
+      <div class="countdown" id="countdown">
+        <div class="cd-item"><span class="cd-num" id="cd-days">000</span><span class="cd-label">Hari</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-item"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Jam</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-item"><span class="cd-num" id="cd-mins">00</span><span class="cd-label">Menit</span></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-item"><span class="cd-num" id="cd-secs">00</span><span class="cd-label">Detik</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-text">SCROLL DOWN ↓</div>
+  </section>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announce-bar">
+    <div class="announce-inner">
+      <span>⚡ NEW DROP: Phase 3 Lineup Revealed</span>
+      <span class="bar-sep">|</span>
+      <span>🎫 Early Bird sudah habis!</span>
+      <span class="bar-sep">|</span>
+      <span>🔥 Regular On Sale NOW</span>
+      <span class="bar-sep">|</span>
+      <span>⚡ NEW DROP: Phase 3 Lineup Revealed</span>
+      <span class="bar-sep">|</span>
+      <span>🎫 Early Bird sudah habis!</span>
+      <span class="bar-sep">|</span>
+      <span>🔥 Regular On Sale NOW</span>
+    </div>
+  </div>
+
+  <!-- LINEUP -->
+  <section class="lineup" id="lineup">
+    <div class="lineup-header">
+      <p class="sec-tag">[  L I N E U P  ]</p>
+      <h2 class="sec-title">HEADLINERS<br>&amp; ARTIS</h2>
+    </div>
+    <div class="lineup-day-tabs">
+      <button class="day-tab active" data-day="1">DAY 1 — 14 NOV</button>
+      <button class="day-tab" data-day="2">DAY 2 — 15 NOV</button>
+      <button class="day-tab" data-day="3">DAY 3 — 16 NOV</button>
+    </div>
+    <div class="lineup-grid" id="lineupGrid">
+      <div class="artist headliner">
+        <div class="artist-badge">HEADLINER</div>
+        <h3>LIONEL MESSI</h3>
+        <p>La Pulga World Tour 2025</p>
+        <span class="artist-stage">MAIN STAGE · 21:00</span>
+      </div>
+      <div class="artist featured">
+        <h3>CRISTIANO RONALDO</h3>
+        <p>CR7 Band Project</p>
+        <span class="artist-stage">SONIC STAGE · 20:00</span>
+      </div>
+      <div class="artist featured">
+        <h3>KYLIAN MBAPPÉ</h3>
+        <p>Mbappé & The Parisians</p>
+        <span class="artist-stage">ELECTRIC STAGE · 19:30</span>
+      </div>
+      <div class="artist">
+        <h3>ERLING HAALAND</h3>
+        <p>Norwegian Thunder</p>
+        <span class="artist-stage">NEON STAGE · 18:00</span>
+      </div>
+      <div class="artist">
+        <h3>VINICIUS JR.</h3>
+        <p>Samba Beats Collective</p>
+        <span class="artist-stage">FOREST STAGE · 17:30</span>
+      </div>
+      <div class="artist">
+        <h3>LAMINE YAMAL</h3>
+        <p>Golden Boy Sessions</p>
+        <span class="artist-stage">NEON STAGE · 16:00</span>
+      </div>
+      <div class="artist">
+        <h3>PEDRI</h3>
+        <p>Tiki-Taka Sounds</p>
+        <span class="artist-stage">ELECTRIC STAGE · 15:00</span>
+      </div>
+      <div class="artist">
+        <h3>BELLINGHAM</h3>
+        <p>Jude's House of Music</p>
+        <span class="artist-stage">SONIC STAGE · 14:30</span>
+      </div>
+      <div class="artist more">
+        <h3>+52 ARTIS LAINNYA</h3>
+        <p>Berbagai genre & stage</p>
+        <span class="artist-stage">ALL STAGES</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGES -->
+  <section class="stages" id="stages">
+    <p class="sec-tag">[  S T A G E S  ]</p>
+    <h2 class="sec-title">5 STAGES.<br>INFINITE VIBES.</h2>
+    <div class="stages-grid">
+      <div class="stage-card s1">
+        <div class="stage-num">01</div>
+        <h3>MAIN STAGE</h3>
+        <p>Kapasitas 50,000 · Outdoor · LED Wall Raksasa</p>
+        <div class="stage-genre">POP · ROCK · EDM</div>
+      </div>
+      <div class="stage-card s2">
+        <div class="stage-num">02</div>
+        <h3>SONIC STAGE</h3>
+        <p>Kapasitas 20,000 · Outdoor · Sound System Premium</p>
+        <div class="stage-genre">HIP-HOP · R&B · TRAP</div>
+      </div>
+      <div class="stage-card s3">
+        <div class="stage-num">03</div>
+        <h3>ELECTRIC STAGE</h3>
+        <p>Kapasitas 15,000 · Indoor · Full Production</p>
+        <div class="stage-genre">EDM · TECHNO · HOUSE</div>
+      </div>
+      <div class="stage-card s4">
+        <div class="stage-num">04</div>
+        <h3>NEON STAGE</h3>
+        <p>Kapasitas 8,000 · Semi-Indoor · UV Lights</p>
+        <div class="stage-genre">INDIE · ALTERNATIVE</div>
+      </div>
+      <div class="stage-card s5">
+        <div class="stage-num">05</div>
+        <h3>FOREST STAGE</h3>
+        <p>Kapasitas 5,000 · Outdoor · Acoustic Vibes</p>
+        <div class="stage-genre">JAZZ · ACOUSTIC · FOLK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKETS -->
+  <section class="tickets" id="tickets">
+    <p class="sec-tag">[  T I C K E T S  ]</p>
+    <h2 class="sec-title">GRAB YOUR<br>PASS NOW</h2>
+    <div class="tickets-grid">
+      <div class="ticket-card tc1">
+        <div class="tc-header">
+          <p class="tc-type">1-DAY PASS</p>
+          <h3>Daily</h3>
+        </div>
+        <div class="tc-price">Rp 599<span>K</span></div>
+        <ul>
+          <li>✓ Akses 1 hari pilihan</li>
+          <li>✓ Semua stage & area</li>
+          <li>✓ Festival map & kit</li>
+          <li>✗ Backstage access</li>
+          <li>✗ VIP lounge</li>
+        </ul>
+        <a href="#" class="btn-ticket">Beli Tiket</a>
+        <div class="tc-stock">Tersedia</div>
+      </div>
+      <div class="ticket-card tc2 hot">
+        <div class="tc-flame">🔥 HOT</div>
+        <div class="tc-header">
+          <p class="tc-type">3-DAY PASS</p>
+          <h3>Full Festival</h3>
+        </div>
+        <div class="tc-price">Rp 1.299<span>K</span></div>
+        <ul>
+          <li>✓ Akses 3 hari penuh</li>
+          <li>✓ Semua stage & area</li>
+          <li>✓ Festival map & kit</li>
+          <li>✓ Priority entrance</li>
+          <li>✗ VIP lounge</li>
+        </ul>
+        <a href="#" class="btn-ticket glow">Beli Tiket</a>
+        <div class="tc-stock hot-stock">⚡ Tersisa 500!</div>
+      </div>
+      <div class="ticket-card tc3">
+        <div class="tc-header">
+          <p class="tc-type">VIP PASS</p>
+          <h3>Premium</h3>
+        </div>
+        <div class="tc-price">Rp 2.999<span>K</span></div>
+        <ul>
+          <li>✓ Akses 3 hari penuh</li>
+          <li>✓ VIP Lounge eksklusif</li>
+          <li>✓ Backstage area</li>
+          <li>✓ Merch bundle</li>
+          <li>✓ Meet & greet session</li>
+        </ul>
+        <a href="#" class="btn-ticket">Beli Tiket</a>
+        <div class="tc-stock">Terbatas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <p class="sec-tag">[  F A Q  ]</p>
+    <h2 class="sec-title">PERTANYAAN<br>UMUM</h2>
+    <div class="faq-list">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Bagaimana cara menukarkan tiket?<span>+</span></div>
+        <div class="faq-a">Tunjukkan e-ticket di aplikasi atau cetak tiket untuk ditukar dengan wristband di gerbang masuk festival.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Apakah ada fasilitas parkir?<span>+</span></div>
+        <div class="faq-a">Ya, tersedia area parkir luas di GBK. Kami juga menyediakan shuttle bus dari beberapa titik di Jakarta.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Apa yang tidak boleh dibawa masuk?<span>+</span></div>
+        <div class="faq-a">Dilarang membawa minuman kemasan, kamera profesional, drone, narkoba, dan senjata dalam bentuk apapun.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Apakah tiket bisa di-refund?<span>+</span></div>
+        <div class="faq-a">Tiket non-refundable namun dapat dipindahtangankan. Hubungi support kami untuk proses transfer tiket.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">MESSI<span>FEST</span><br><small>2025</small></div>
+      <div class="footer-info">
+        <p>📍 GBK Senayan, Jakarta</p>
+        <p>📅 14 – 16 November 2025</p>
+        <p>✉️ info@messifest.id</p>
+      </div>
+      <div class="footer-socials">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter/X</a>
+        <a href="#">TikTok</a>
+        <a href="#">Spotify</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MessiFest. All Rights Reserved. La Pulga Never Stops. ⭐</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
