@@ -15,6 +15,7 @@ Koleksi **landing page production-ready** dengan fitur bilingual Indonesia/Inggr
 | `psikolog/` | Dr. Anisa Rahmawati | Mental health professional | Light mint |
 | `wedding-organizer/` | Ackerman Bridal | Wedding organizer | Dusty rose & champagne gold |
 | `music-festival/` | MessiFest 2025 | Music festival | Psychedelic neon multicolor |
+| `photography-studio/` | Itachi Lens Studio | Photography studio | Editorial B&W + crimson red |
 
 ---
 
